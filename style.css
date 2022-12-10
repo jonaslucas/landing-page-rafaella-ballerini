@@ -17,3 +17,28 @@ body {
 body {
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
+
+/* Estilizando o cabecalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 72px;
+}
+
+.cabecalho-navegacao {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-navegacao-item {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
