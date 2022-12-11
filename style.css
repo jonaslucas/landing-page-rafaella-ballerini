@@ -29,6 +29,14 @@ body {
 
 .cabecalho-imagem {
     height: 72px;
+
+    /* Novos efeitos */
+    transition: all 0.1s;
+}
+
+/* Efeito hover - Imagem */
+.cabecalho-imagem:hover {
+    transform: scale(1.1);
 }
 
 .cabecalho-navegacao {
@@ -108,6 +116,14 @@ body {
 
 .principal-primario-imagem {
     height: 430px;
+    
+    /* Novos efeitos */
+    transition: all 0.2s;
+}
+
+/* Efeito hover - Imagem */
+.principal-primario-imagem:hover {
+    transform: scale(1.2);
 }
 
 /* Segunda parte do conteúdo princial */
@@ -146,4 +162,12 @@ body {
     height: 48px;
     display: block;
     margin: 0 auto;
+
+    /* Novos efeitos */
+    transition: all 0.2s;
+}
+
+/* Efeito hover - Imagem */
+.rodape-imagem:hover {
+    transform: scale(1.1);
 }
