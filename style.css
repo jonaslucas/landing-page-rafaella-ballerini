@@ -88,11 +88,22 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #2F2325;
+
+    /* Novos efeitos */
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 /* Efeito hover */
 .principal-primario-texto-botao:hover {
     background-color: rgba(236, 214, 196, 0.53);
+    transform: scale(1.1);
+}
+
+/* Efeito active */
+.principal-primario-texto-botao:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1);
 }
 
 .principal-primario-imagem {
