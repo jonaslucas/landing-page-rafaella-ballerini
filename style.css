@@ -90,6 +90,11 @@ body {
     color: #2F2325;
 }
 
+/* Efeito hover */
+.principal-primario-texto-botao:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
 .principal-primario-imagem {
     height: 430px;
 }
