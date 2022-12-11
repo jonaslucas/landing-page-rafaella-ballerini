@@ -32,6 +32,7 @@ body {
 
     /* Novos efeitos */
     transition: all 0.1s;
+    cursor: pointer;
 }
 
 /* Efeito hover - Imagem */
@@ -49,6 +50,26 @@ body {
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
+
+    /* Novos efeitos */
+    position: relative;
+    cursor: pointer;
+}
+
+/* Efeito hover - Links */
+.cabecalho-navegacao-item::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #FFF2E7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho-navegacao-item:hover::after {
+    width: 100%;
 }
 
 /* Estilizando o conteúdo principal */
