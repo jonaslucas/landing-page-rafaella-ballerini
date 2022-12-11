@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-img {
+    height: 72px;
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.cabecalho-img:hover {
+    transform: scale(1.1);
+}
+
+.cabecalho-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.cabecalho-nav-a {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cabecalho-nav-a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #FFF2E7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+.cabecalho-nav-a:hover::after {
+    width: 100%;
+}
+
+#selecionado {
+    font-weight: 700;
+}
+
+#selecionado::after {
+    height: 4px;
+}
+
+.principal {
+    border-top: .4px solid #FFF2E7;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.principal-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.principal-txt-tit {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+
+.principal-txt-sub {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.principal-txt-btn {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, .25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+    cursor: pointer;
+    transform: all .3s;
+}
+
+.principal-txt-btn:hover {
+    background-color: rgba(236, 214, 196, .53);
+    transform: scale(1.1);
+}
+
+.principal-txt-btn:active {
+    background-color: rgba(0, 0, 0, .5);
+    transform: scale(1);
+}
+
+.principal-img {
+    height: 430px;
+    transition: all .2s;
+}
+
+.principal-img:hover {
+    transform: scale(1.2);
+}
+
+.rodape {
+    padding: 32px;
+    border-top: .4px solid #FFF2E7;
+}
+
+.rodape-img {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    transition: all .2s;
+}
+
+.rodape-img:hover {
+    transform: scale(1.1);
+}
