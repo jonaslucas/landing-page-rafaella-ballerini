@@ -7,6 +7,29 @@
     <title>Balle Bot - Tutorial</title>
 
     <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <style>
+        @keyframes animacao {
+            0% {
+                transform: translateX(-50px);
+            }
+
+            50% {
+                transform: translateX(50px);
+            }
+
+            100% {
+                transform: translateX(-50px);
+            }
+        }
+
+        .principal-img {
+            animation-name: animacao;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+    </style>
 </head>
 <body>
     <header class="cabecalho">

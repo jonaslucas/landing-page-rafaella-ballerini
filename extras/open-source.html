@@ -7,6 +7,29 @@
     <title>Balle Bot - Open Source</title>
 
     <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <style>
+        @keyframes animacao {
+            0% {
+                transform: translateY(-40px);
+            }
+
+            50% {
+                transform: translateY(40px);
+            }
+
+            100% {
+                transform: translateY(-40px);
+            }
+        }
+
+        .principal-img {
+            animation-name: animacao;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+    </style>
 </head>
 <body>
     <header class="cabecalho">

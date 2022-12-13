@@ -7,6 +7,25 @@
     <title>Balle Bot - Comunidade Ballerini</title>
 
     <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <style>
+        @keyframes animacao {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .principal-img {
+            animation-name: animacao;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+    </style>
 </head>
 <body>
     <header class="cabecalho">
