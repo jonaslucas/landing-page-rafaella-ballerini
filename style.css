@@ -29,6 +29,15 @@ body {
 
 .cabecalho-imagem {
     height: 72px;
+
+    /* Novos efeitos */
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+/* Efeito hover - Imagem */
+.cabecalho-imagem:hover {
+    transform: scale(1.1);
 }
 
 .cabecalho-navegacao {
@@ -41,6 +50,26 @@ body {
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
+
+    /* Novos efeitos */
+    position: relative;
+    cursor: pointer;
+}
+
+/* Efeito hover - Links */
+.cabecalho-navegacao-item::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #FFF2E7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho-navegacao-item:hover::after {
+    width: 100%;
 }
 
 /* Estilizando o conteúdo principal */
@@ -88,15 +117,34 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #2F2325;
+
+    /* Novos efeitos */
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 /* Efeito hover */
 .principal-primario-texto-botao:hover {
     background-color: rgba(236, 214, 196, 0.53);
+    transform: scale(1.1);
+}
+
+/* Efeito active */
+.principal-primario-texto-botao:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1);
 }
 
 .principal-primario-imagem {
     height: 430px;
+    
+    /* Novos efeitos */
+    transition: all 0.2s;
+}
+
+/* Efeito hover - Imagem */
+.principal-primario-imagem:hover {
+    transform: scale(1.2);
 }
 
 /* Segunda parte do conteúdo princial */
@@ -135,4 +183,12 @@ body {
     height: 48px;
     display: block;
     margin: 0 auto;
+
+    /* Novos efeitos */
+    transition: all 0.2s;
+}
+
+/* Efeito hover - Imagem */
+.rodape-imagem:hover {
+    transform: scale(1.1);
 }

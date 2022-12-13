@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Balle Bot - Open Source</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <style>
+        @keyframes animacao {
+            0% {
+                transform: translateY(-40px);
+            }
+
+            50% {
+                transform: translateY(40px);
+            }
+
+            100% {
+                transform: translateY(-40px);
+            }
+        }
+
+        .principal-img {
+            animation-name: animacao;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="../index.html"><img class="cabecalho-img" src="../logo.svg" alt="Logo da comunidade Ballerini"></a>
+
+        <nav class="cabecalho-nav">
+            <a class="cabecalho-nav-a" href="comunidade-ballerini.html">Comunidade Ballerini</a>
+            <a class="cabecalho-nav-a" href="tutorial.html">Tutorial</a>
+            <a id="selecionado" class="cabecalho-nav-a" href="open-source.html">Open Source</a>
+            <a class="cabecalho-nav-a" href="comandos.html">Comandos</a>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <div class="principal-txt">
+            <h1 class="principal-txt-tit">Open Source</h1>
+            <h2 class="principal-txt-sub">Aguardando atualizações...</h2>
+            <a href="../index.html"><button class="principal-txt-btn">Retornar</button></a>
+        </div>
+
+        <img class="principal-img" src="../ballebot.svg" alt="Imagem ballebot">
+    </main>
+
+    <footer class="rodape">
+        <img class="rodape-img" src="../ballerini.svg">
+    </footer>
+</body>
+</html>
